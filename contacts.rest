@@ -5,7 +5,7 @@ GET http://localhost:3000/
 GET http://localhost:3000/contacts
 
 ###
-GET http://localhost:3000/contacts/detail?id=REPLACE_WITH_CONTACT_ID
+GET http://localhost:3000/contacts/detail?id=69fcaa611e19d92fdcf101a0
 
 
 // PRODUCTION Deploy
@@ -16,4 +16,4 @@ GET https://cse341spring26.onrender.com
 GET https://cse341spring26.onrender.com/contacts
 
 ###
-GET https://cse341spring26.onrender.com/contacts/detail?id=REPLACE_WITH_CONTACT_ID
+GET https://cse341spring26.onrender.com/contacts/detail?id=69fcaa611e19d92fdcf101a0
