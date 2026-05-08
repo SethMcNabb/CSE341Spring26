@@ -1,0 +1,19 @@
+// LOCALHOST
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/contacts
+
+###
+GET http://localhost:3000/contacts/detail?id=REPLACE_WITH_CONTACT_ID
+
+
+// PRODUCTION Deploy
+###
+GET https://cse341spring26.onrender.com
+
+###
+GET https://cse341spring26.onrender.com/contacts
+
+###
+GET https://cse341spring26.onrender.com/contacts/detail?id=REPLACE_WITH_CONTACT_ID
