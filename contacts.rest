@@ -5,7 +5,7 @@ GET http://localhost:3000/
 GET http://localhost:3000/contacts
 
 ###
-GET http://localhost:3000/contacts/detail?id=69fcaa611e19d92fdcf101a0
+GET http://localhost:3000/contacts/69fcaa611e19d92fdcf101a0
 
 
 // PRODUCTION Deploy
@@ -16,4 +16,65 @@ GET https://cse341spring26.onrender.com
 GET https://cse341spring26.onrender.com/contacts
 
 ###
-GET https://cse341spring26.onrender.com/contacts/detail?id=69fcaa611e19d92fdcf101a0
+GET https://cse341spring26.onrender.com/contacts/69fcaa611e19d92fdcf101a0
+
+
+###
+// LOCALHOST - create a contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+	"firstName": "Test",
+	"lastName": "User",
+	"email": "test.user@example.com",
+	"favoriteColor": "blue",
+	"birthday": "1990-01-01"
+}
+
+###
+// LOCALHOST - update a contact (replace :id with an actual id)
+PUT http://localhost:3000/contacts/:id
+Content-Type: application/json
+
+{
+	"firstName": "Updated",
+	"lastName": "User",
+	"email": "updated.user@example.com",
+	"favoriteColor": "green",
+	"birthday": "1990-02-02"
+}
+
+###
+// LOCALHOST - delete a contact (replace :id with an actual id)
+DELETE http://localhost:3000/contacts/:id
+
+###
+// PRODUCTION - create a contact
+POST https://cse341spring26.onrender.com/contacts
+Content-Type: application/json
+
+{
+	"firstName": "Test",
+	"lastName": "User",
+	"email": "test.user@example.com",
+	"favoriteColor": "blue",
+	"birthday": "1990-01-01"
+}
+
+###
+// PRODUCTION - update a contact
+PUT https://cse341spring26.onrender.com/contacts/:id
+Content-Type: application/json
+
+{
+	"firstName": "Updated",
+	"lastName": "User",
+	"email": "updated.user@example.com",
+	"favoriteColor": "green",
+	"birthday": "1990-02-02"
+}
+
+###
+// PRODUCTION - delete a contact
+DELETE https://cse341spring26.onrender.com/contacts/:id
