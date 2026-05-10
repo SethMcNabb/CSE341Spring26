@@ -25,16 +25,16 @@ POST http://localhost:3000/contacts
 Content-Type: application/json
 
 {
-	"firstName": "Test",
-	"lastName": "User",
+	"firstName": "John",
+	"lastName": "Doe",
 	"email": "test.user@example.com",
 	"favoriteColor": "blue",
 	"birthday": "1990-01-01"
 }
 
 ###
-// LOCALHOST - update a contact (replace :id with an actual id)
-PUT http://localhost:3000/contacts/:id
+// LOCALHOST - update a contact
+PUT http://localhost:3000/contacts/6a001fbf2216fdea6a684ada
 Content-Type: application/json
 
 {
@@ -42,20 +42,19 @@ Content-Type: application/json
 	"lastName": "User",
 	"email": "updated.user@example.com",
 	"favoriteColor": "green",
-	"birthday": "1990-02-02"
+	"birthday": "2000-02-02"
 }
 
 ###
-// LOCALHOST - delete a contact (replace :id with an actual id)
-DELETE http://localhost:3000/contacts/:id
-
+// LOCALHOST - delete a contact
+DELETE http://localhost:3000/contacts/6a001fbf2216fdea6a684ada
 ###
 // PRODUCTION - create a contact
 POST https://cse341spring26.onrender.com/contacts
 Content-Type: application/json
 
 {
-	"firstName": "Test",
+	"firstName": "Ted",
 	"lastName": "User",
 	"email": "test.user@example.com",
 	"favoriteColor": "blue",
@@ -64,11 +63,11 @@ Content-Type: application/json
 
 ###
 // PRODUCTION - update a contact
-PUT https://cse341spring26.onrender.com/contacts/:id
+PUT https://cse341spring26.onrender.com/contacts/6a001ff1f060c81e8c127697
 Content-Type: application/json
 
 {
-	"firstName": "Updated",
+	"firstName": "Bill",
 	"lastName": "User",
 	"email": "updated.user@example.com",
 	"favoriteColor": "green",
@@ -77,4 +76,4 @@ Content-Type: application/json
 
 ###
 // PRODUCTION - delete a contact
-DELETE https://cse341spring26.onrender.com/contacts/:id
+DELETE https://cse341spring26.onrender.com/contacts/6a001ff1f060c81e8c127697
